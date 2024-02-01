@@ -121,6 +121,30 @@ nav {
  li {
     list-style-type: none;
  } 
+ 
+/*..............CONTACTO..................*/
+
+/*grid contacto*/
+
+.item1 {
+    grid-area: form;
+}
+
+.grid-container_form_map {
+    display: grid;
+    grid-template-areas: 'form form form map map';
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container_form_map > div {
+    text-align: start;
+    padding: 20px 0;
+}
+
+.item2 {
+    grid-area: map;
+}
 
  /*formulario de contacto*/
  label {
@@ -133,11 +157,19 @@ nav {
 }
 
 input[type=text], textarea {
-	width: 80%;
+	width: 90%;
 	margin: 10px 20px;
 	padding: 20px 20px;
 	border: 2px solid #CCC;
 	height: 20px;
+}
+
+input[type=text_mensaje], textarea {
+	width: 90%;
+	margin: 10px 20px;
+	padding: 20px 20px;
+	border: 2px solid #CCC;
+	height: 100%;
 }
 
 .boton_enviar {
@@ -160,11 +192,13 @@ input[type=text], textarea {
 
   /*mapa*/
  .mapa {
-    width: 50%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
     display: inline;
     padding: 20px 20px; 
 }
+
+/*....................................*/
 
  /*footer*/
  footer {

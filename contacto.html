@@ -32,41 +32,36 @@
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-6">
-                <!-- Formulario -->
-                <form action="/action_page.php" method="post" name="formulario">
-                    <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" placeholder="Ingresa tu nombre" name="nombre"/>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="text" placeholder="Ingresa tu email" name="email"/>
-                    </div>
-                    <div>
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea type="text" rows="2" cols="20" placeholder="Escribe tu mensaje" name="mensaje"></textarea>
-                    </div>
-                    
-                    <div>
-                        <legend>¿Deseas recibir notificaciones por email?</legend>
-                        <label>Sí</label>
-                        <input type="radio" name="novedades" value="Si" checked>
-                        <label>No</label>
-                        <input type="radio" name="novedades" value="No">
-                    </div>
-                    <!--<input type="reset" value="Resetear" class="boton_resetear"/>-->
-                    <button type="submit" value="Enviar" class="boton_enviar">Enviar</button>
-                </form>
-                
-                <!-- Mapa -->
-                <div class="col-6">
-                    <h3>También puedes encontrarnos aquí:</h3>
+            <div class="grid-container_form_map">
+                <div class="item1">
+                    <!-- Formulario -->
+                    <form action="/action_page.php" method="post" name="formulario">
+                        <div><label for="nombre">Nombre:</label>
+                            <input type="text" placeholder="Ingresa tu nombre" name="nombre"/>
+                        </div>
+                        <div><label for="email">Email:</label>
+                            <input type="text" placeholder="Ingresa tu email" name="email"/>
+                        </div>
+                        <div><label for="mensaje">Mensaje:</label>
+                            <textarea type="text_mensaje" rows="3" cols="20" placeholder="Escribe tu mensaje" name="mensaje"></textarea>
+                        </div>
+                        <div><legend>¿Deseas recibir notificaciones por email?</legend>
+                            <label>Sí</label>
+                            <input type="radio" name="novedades" value="Si" checked>
+                            <label>No</label>
+                            <input type="radio" name="novedades" value="No">
+                        </div>
+                        <!--<input type="reset" value="Resetear" class="boton_resetear"/>-->
+                        <button type="submit" value="Enviar" class="boton_enviar">Enviar</button>
+                    </form>
+                </div>
+
+                <div class="item2">
+                    <!-- Mapa -->
+                    <label for="titulo"> También puedes encontrarnos aquí:</label>
                     <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.9992800703503!2d-56.201343742371165!3d-34.906521777600155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f802afe10cee1%3A0xb95846203de847c5!2sPuerta%20de%20la%20Ciudadela!5e0!3m2!1ses-419!2suy!4v1704574517950!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-            </div>
         
         </div>
     </main>
