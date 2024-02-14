@@ -67,6 +67,7 @@ footer .logo {
 /*hero*/
 .hero_imágen_index {
   background-image: url(../imgs/manigueta.png);
+  width: 100%;
   height: 350px;
   background-position: center;
   background-repeat: no-repeat;
@@ -82,7 +83,27 @@ footer .logo {
   padding: 40px 20px;
 }
 
-.fotoequipo {
+.grid_index {
+  display: grid;
+  grid-template-areas: "i0 ti ti" "i0 i1 i2";
+}
+.grid_index .intro_index {
+  grid-area: i0;
+}
+.grid_index .título_integrantes {
+  grid-area: ti;
+}
+.grid_index .integrante1 {
+  grid-area: i1;
+}
+.grid_index .integrante2 {
+  grid-area: i2;
+}
+.grid_index > div {
+  text-align: start;
+  padding: 20px 20px;
+}
+.grid_index .fotoequipo {
   border-radius: 50%;
 }
 
@@ -161,6 +182,44 @@ footer .logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.grid_container_herramientas {
+  display: grid;
+  grid-template-areas: "h1 h2 h3 h4" "h5 h6 h7 h8";
+}
+.grid_container_herramientas .herramienta1 {
+  grid-area: h1;
+}
+.grid_container_herramientas .herramienta2 {
+  grid-area: h2;
+}
+.grid_container_herramientas .herramienta3 {
+  grid-area: h3;
+}
+.grid_container_herramientas .herramienta4 {
+  grid-area: h4;
+}
+.grid_container_herramientas .herramienta5 {
+  grid-area: h5;
+}
+.grid_container_herramientas .herramienta6 {
+  grid-area: h6;
+}
+.grid_container_herramientas .herramienta7 {
+  grid-area: h7;
+}
+.grid_container_herramientas .herramienta8 {
+  grid-area: h8;
+}
+.grid_container_herramientas > div {
+  text-align: start;
+  padding: 10px 10px;
+}
+.grid_container_herramientas .subtítulos {
+  text-align: start;
+  font-weight: bold;
+  padding-bottom: 8px;
 }
 
 .carousel_piezas_serigraficas {
@@ -283,7 +342,7 @@ h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: 50px;
   color: #fff;
-  background-color: rgb(118, 5, 112);
+  background-color: #9967ce;
   padding: 20px 20px;
 }
 
@@ -297,7 +356,7 @@ h2 {
 h3 {
   padding: 20px 20px;
   color: white;
-  background-color: #a0a8f3;
+  background-color: #9967ce;
 }
 
 h4 {

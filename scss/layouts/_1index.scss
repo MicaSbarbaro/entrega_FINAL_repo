@@ -1,7 +1,7 @@
 /*hero*/
 .hero_imágen_index {
     background-image: url(../imgs/manigueta.png);
-    width: 90%;
+    width: 100%;
     height: 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,17 +17,18 @@
     padding: 40px 20px;
 }
 
-.fotoequipo { 
-	border-radius: 50%; 
-}
-
 .grid_index { 
 	display: grid;
     grid-template-areas:
-    'i0 i0 i1 i2';
+    'i0 ti ti'
+    'i0 i1 i2';
 
     .intro_index { 
         grid-area: i0;
+    }
+
+    .título_integrantes { 
+        grid-area: ti;
     }
 
     .integrante1 { 
@@ -40,7 +41,10 @@
 
     & > div {
         text-align: start;
-        padding: 10px 10px;
+        padding: 20px 20px;
     }
 
+    .fotoequipo { 
+        border-radius: 50%; 
+    }
 }
