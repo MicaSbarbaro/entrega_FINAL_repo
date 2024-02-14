@@ -58,7 +58,8 @@ img {
 } 
 
 /*hero*/
-.hero_imágen_index {background-image: url(../imgs/manigueta.png);
+.hero_imágen_index {
+    background-image: url(../imgs/manigueta.png);
     height: 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,8 +122,51 @@ nav {
  li {
     list-style-type: none;
  } 
+
+/*..............SERIGRAFÍA..................*/
+
+.grid_container_grabado {
+    display: grid;
+    grid-template-areas: 
+    'intro intro intro intro' 
+    'info1 info2 info3 info4';
+
+    .intro_grabado {
+        grid-area: intro;
+    }
+    .info_1_grabado {
+        grid-area: info1;
+    }
+    .info_2_grabado {
+        grid-area: info2;
+    }
+    .info_3_grabado {
+        grid-area: info3;
+    }
+    .info_4_grabado {
+        grid-area: info4;
+    }
+
+    & > div {
+        text-align: start;
+        padding: 10px 10px;
+    }
+
+    .subtitulo_grabado_intro {
+        text-align: start;
+        font-weight: bold;
+        padding-bottom: 8px;   
+    }
+    .subtitulos_grabado {
+        text-align: center;
+        font-weight: bold; 
+        padding-bottom: 8px; 
+    }
+    
+}
  
 /*..............CONTACTO..................*/
+
 .grid_container_form_map {
     display: grid;
     grid-template-areas: 'form form form map map';
