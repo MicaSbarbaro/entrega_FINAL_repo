@@ -1,6 +1,7 @@
 /*hero*/
 .hero_imágen_index {
     background-image: url(../imgs/manigueta.png);
+    width: 90%;
     height: 350px;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,4 +19,28 @@
 
 .fotoequipo { 
 	border-radius: 50%; 
+}
+
+.grid_index { 
+	display: grid;
+    grid-template-areas:
+    'i0 i0 i1 i2';
+
+    .intro_index { 
+        grid-area: i0;
+    }
+
+    .integrante1 { 
+        grid-area: i1;
+    }
+
+    .integrante2 { 
+        grid-area: i2;
+    }
+
+    & > div {
+        text-align: start;
+        padding: 10px 10px;
+    }
+
 }
