@@ -1,0 +1,21 @@
+/*hero*/
+.hero_imágen_index {
+    background-image: url(../imgs/manigueta.png);
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #9967ce;
+}
+  
+.hero_text {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    font-size: 100px;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.fotoequipo { 
+	border-radius: 50%; 
+}
