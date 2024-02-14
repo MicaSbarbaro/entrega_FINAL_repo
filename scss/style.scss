@@ -1,4 +1,17 @@
-@import 'base
+@import 'base/vars';
+@import 'base/reset';
+
+@import 'components/navbar';
+@import 'components/footer';
+
+@import 'layouts/1.index';
+@import 'layouts/2.serigrafía';
+@import 'layouts/3.taller';
+@import 'layouts/4.galería';
+@import 'layouts/5.contacto';
+@import 'layouts/mediaqueries';
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Rambla&display=swap');
 /*font-family: 'Rambla', sans-serif;*/ 
