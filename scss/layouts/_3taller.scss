@@ -87,6 +87,10 @@
     }
 
     .herramienta13 {
+        grid-area: h14;
+    }
+
+    .herramienta14 {
         grid-area: h13;
         .sub_subtítulo {
             text-align: start;
@@ -95,11 +99,6 @@
             padding-bottom: 8px;
         }
     }
-
-    .herramienta14 {
-        grid-area: h14;
-    }
-
 
     & > div {
         text-align: start;
