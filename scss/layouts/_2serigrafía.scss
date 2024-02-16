@@ -7,7 +7,7 @@
     background-size: cover;
 }
 
- /*grid*/
+ /*grid grabado*/
 .grid_container_grabado {
     display: grid;
     grid-template-areas: 
@@ -46,4 +46,52 @@
         padding-bottom: 8px; 
     }
     
+}
+
+ /*grid estampado*/
+.grid_container_estampado {
+    display: grid;  
+    grid-template-areas: 
+    'e1 e2 e3'
+    'e4 e5 e6'
+    'e7 e8 e9';
+
+    .estampado1 {
+        grid-area: e1;
+    }
+    .estampado2 {
+        grid-area: e2;
+    }
+    .estampado3 {
+        grid-area: e3;
+    }
+    .estampado4 {
+        grid-area: e4;
+    }
+    .estampado5 {
+        grid-area: e5;
+    }
+    .estampado6 {
+        grid-area: e6;
+    }
+    .estampado7 {
+        grid-area: e7;
+    }
+    .estampado8 {
+        grid-area: e8;
+    }
+    .estampado9 {
+        grid-area: e9;
+    }
+
+    & > div {
+        text-align: start;
+        padding: 10px 10px;
+    }
+
+    .subtítulos {
+        text-align: start;
+        font-weight: bold;
+        padding-bottom: 8px;   
+    }
 }
