@@ -8,28 +8,31 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- link de css -->
-  <link rel="stylesheet" type="text/css" href="../primer_repo/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
 
     <header>
-
         <nav>
-            <a href="" class="nav_brand"><img src="../primer_repo/imgs/manigueta/espatula_tintablanca2.png" class="tinta_blanca"></a>
+            <a href="" class="nav_brand"><img src="../imgs/manigueta/espatula_tintablanca2.png" class="tinta_blanca"></a>
             <ul class="nav_list">
-                <li><a href="index.html" class="nav_link">Inicio</a></li>
-                <li><a href="serigrafía.html" class="nav_link">Serigrafía</a></li>
-                <li><a href="taller.html" class="nav_link">Taller</a></li>
-                <li><a href="galería.html" class="nav_link">Galería</a></li>
-                <li><a href="contacto.html" class="nav_link">Contacto</a></li>
+              <li><a href="../index.html" class="nav_link">Inicio</a></li>
+                <li><a href="../pages/2_serigrafía.html" class="nav_link">Serigrafía</a></li>
+                <li><a href="../pages/3_taller.html" class="nav_link">Taller</a></li>
+                <li><a href="../pages/4_galería.html" class="nav_link">Galería</a></li>
+                <li><a href="../pages/5_contacto.html" class="nav_link">Contacto</a></li>
             </ul>
         </nav>
-
     </header>
 
     <main>
-      <h1>Galería</h1>
+      
+      <div class="row">
+        <div class="col-12">
+          <h1>Galería</h1>
+        </div>
+      </div>
       
       <h2>Piezas Digitales</h2>
 
@@ -47,7 +50,7 @@
           <button type="button" data-bs-target="#carousel_stickers" data-bs-slide-to="2" aria-label="Slide 3"></button>
           <!-- primer imágen -->
           <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../primer_repo/imgs/stickers/sticker_bruja.jpg" class="d-block w-100" alt="...">
+            <img src="../imgs/stickers/sticker_bruja.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>sticker_bruja</h5>
               <p>Descripción del sticker.</p>
@@ -55,7 +58,7 @@
           </div>
           <!-- segunda imágen -->
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="../primer_repo/imgs/stickers/sticker_carpa.jpg" class="d-block w-100" alt="...">
+            <img src="../imgs/stickers/sticker_carpa.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>sticker_carpa</h5>
               <p>Descripción del sticker_carpa.</p>
@@ -63,7 +66,7 @@
           </div>
           <!-- tercer imágen -->
           <div class="carousel-item">
-            <img src="../primer_repo/imgs/stickers/sticker_ovni.jpg" class="d-block w-100" alt="...">
+            <img src="../imgs/stickers/sticker_ovni.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>sticker_ovni</h5>
               <p>Descripción del sticker_ovni.</p>
@@ -85,15 +88,15 @@
         <article id="carousel_card_corazones" class="col-sm-12 col-md-4 text-light p-3" class="carousel-slide">
           <!-- primer imágen -->
           <div class="carousel-item carousel-card active">
-            <img src="../primer_repo/imgs/parches/parche_negrorosa_corazon.jpg" class="d-block w-100" alt="...">
+            <img src="../imgs/parches/parche_negrorosa_corazon.jpg" class="d-block w-100" alt="...">
           </div>
           <!-- segunda imágen -->
           <div class="carousel-item carousel-card">
-            <img src="../primer_repo/imgs/parches/parche_plateado_corazon.jpg" class="d-block w-100" alt="...">
+            <img src="../imgs/parches/parche_plateado_corazon.jpg" class="d-block w-100" alt="...">
           </div>
           <!-- tercer imágen -->
           <div class="carousel-item carousel-card">
-            <img src="../primer_repo/imgs/parches/parche_negro_corazon.jpg" class="d-block w-100" alt="...">
+            <img src="../imgs/parches/parche_negro_corazon.jpg" class="d-block w-100" alt="...">
           </div>
           <!-- botones laterales del carrusel -->
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel_card_corazones" data-bs-slide="prev">
@@ -116,13 +119,13 @@
         <article id="carousel3" class="carousel slide">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="../primer_repo/imgs/parches/parche_negro_lobas.jpg" class="d-block w-100" alt="...">
+              <img src="../imgs/parches/parche_negro_lobas.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="../primer_repo/imgs/parches/parche_negro_lobas.jpg" class="d-block w-100" alt="...">
+              <img src="../imgs/parches/parche_negro_lobas.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-              <img src="../primer_repo/imgs/parches/parche_negro_lobas2.jpg" class="d-block w-100" alt="...">
+              <img src="../imgs/parches/parche_negro_lobas2.jpg" class="d-block w-100" alt="...">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
@@ -138,15 +141,15 @@
       </section>
     </main>
     
+    <!-- script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
     <footer>
-        <img src="../primer_repo/imgs/manigueta/espatula_enmano_fondoblanco.png" class="logo">
+        <img src="../imgs/manigueta/espatula_enmano_fondoblanco.png" class="logo">
         <p>© 2024, Tinta Atrevida, Serigrafía.</p>
     </footer>  
-
-  <!-- script de bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-  crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -29,6 +29,7 @@ h1 {
 
 h2 {
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
     padding: 20px 20px;
     color: #fff; 
     background-color: #000000;
@@ -41,8 +42,10 @@ h3 {
 }
 
 h4 {
-    color: white;
-    background-color: #cfb7ff;
+    text-align: start;
+    font-weight: bold;
+    padding-top: 10px; 
+    padding-bottom: 10px;
 }
 
 h5 {

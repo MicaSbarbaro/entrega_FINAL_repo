@@ -360,8 +360,10 @@ h3 {
 }
 
 h4 {
-  color: white;
-  background-color: #cfb7ff;
+  text-align: start;
+  font-weight: bold;
+  padding-top: 10px; 
+  padding-bottom: 10px;
 }
 
 h5 {
