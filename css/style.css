@@ -339,22 +339,23 @@ footer .logo {
 /*font-family: 'Bebas Neue', sans-serif;*/
 /*texto*/
 h1 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-size: 50px;
   color: #fff;
   background-color: #9967ce;
-  padding: 20px 20px;
+  padding: 20px 20px; 
 }
 
 h2 {
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
   padding: 20px 20px;
-  color: #fff;
+  color: #fff; 
   background-color: #000000;
 }
 
 h3 {
-  padding: 20px 20px;
+  padding: 20px 20px; 
   color: white;
   background-color: #9967ce;
 }
@@ -367,11 +368,15 @@ h4 {
 }
 
 h5 {
-  color: white;
+  color: #000000;
+  text-align: start;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 h6 {
-  color: #333;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
