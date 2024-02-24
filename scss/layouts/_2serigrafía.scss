@@ -1,3 +1,7 @@
+.diseño {
+    padding: 20px 20px;
+}  
+  
   /*grid grabado*/
 .grid_container_grabado {
     display: grid;
@@ -23,7 +27,7 @@
 
     & > div {
         text-align: start;
-        padding: 10px 10px;
+        padding: 20px 20px;
     }    
 }
 
@@ -65,8 +69,12 @@
 
     & > div {
         text-align: start;
-        padding: 10px 10px;
+        padding: 20px 20px;
     }
+}
+
+.limpieza1 {
+    padding: 0px 20px 20px 20px;
 }
 
 .resumen {

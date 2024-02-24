@@ -100,26 +100,29 @@ footer .logo {
 }
 .grid_index .título_integrantes {
   grid-area: ti;
+  text-align: center;
 }
 .grid_index .integrante1 {
   grid-area: i1;
-  align-items: center;
+  text-align: center;
 }
 .grid_index .integrante2 {
   grid-area: i2;
-  align-items: center;
+  text-align: center;
+}
+.grid_index h4 {
+  text-align: center;
 }
 .grid_index > div {
-  text-align: start;
   padding: 20px 20px;
-}
-.grid_index .subtítulo_nombre {
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 8px;
 }
 .grid_index .fotoequipo {
   border-radius: 50%;
+  align-content: center;
+}
+
+.diseño {
+  padding: 20px 20px;
 }
 
 /*grid grabado*/
@@ -144,7 +147,7 @@ footer .logo {
 }
 .grid_container_grabado > div {
   text-align: start;
-  padding: 10px 10px;
+  padding: 20px 20px;
 }
 
 /*grid estampado*/
@@ -181,7 +184,11 @@ footer .logo {
 }
 .grid_container_estampado > div {
   text-align: start;
-  padding: 10px 10px;
+  padding: 20px 20px;
+}
+
+.limpieza1 {
+  padding: 0px 20px 20px 20px;
 }
 
 .resumen {
@@ -190,7 +197,7 @@ footer .logo {
 
 .grid_container_infotaller {
   display: grid;
-  grid-template-areas: "it1 it2";
+  grid-template-areas: "it1 it2 it2";
 }
 .grid_container_infotaller .infotaller1 {
   grid-area: it1;
@@ -198,9 +205,14 @@ footer .logo {
 .grid_container_infotaller .infotaller2 {
   grid-area: it2;
 }
+.grid_container_infotaller .infotaller2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .grid_container_infotaller > div {
   text-align: start;
-  padding: 10px 10px;
+  padding: 20px 20px;
 }
 
 .grid_container_herramientas {
@@ -251,7 +263,7 @@ footer .logo {
 }
 .grid_container_herramientas > div {
   text-align: start;
-  padding: 10px 10px;
+  padding: 20px 20px;
 }
 
 .carousel_piezas_digitales {

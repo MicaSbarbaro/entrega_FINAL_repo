@@ -27,30 +27,30 @@
 
     .título_integrantes { 
         grid-area: ti;
+        text-align: center;
     }
 
     .integrante1 { 
         grid-area: i1;
-        align-items: center;
+        text-align: center;
+        
     }
 
     .integrante2 { 
         grid-area: i2;
-        align-items: center;
+        text-align: center;
+    }
+
+    h4 { 
+        text-align: center;
     }
 
     & > div {
-        text-align: start;
         padding: 20px 20px;
-    }
-
-    .subtítulo_nombre {
-        text-align: center;
-        font-weight: bold;
-        padding-bottom: 8px;   
     }
 
     .fotoequipo { 
         border-radius: 50%; 
+        align-content: center;
     }
 }
