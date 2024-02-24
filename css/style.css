@@ -36,6 +36,7 @@ nav {
   justify-content: space-between;
   background-color: black;
   position: sticky;
+  align-items: center;
 }
 
 .nav_list {
@@ -50,13 +51,22 @@ nav {
   font-weight: bold;
 }
 
+.nav-brand {
+  width: 120px;
+  height: 100%;
+}
+.nav-brand img {
+  width: 100%;
+  object-fit: contain;
+}
+
 /*....................FOOTER.....................*/
 footer {
   padding: 50px 40px;
   background-color: #000000;
   color: white;
   text-align: right;
-  font-size: 24px;
+  font-size: 20pxpx;
   text-align: center;
 }
 footer .logo {
@@ -64,15 +74,13 @@ footer .logo {
   padding: 15px 15px;
 }
 
-/*hero*/
-.hero_imágen_index {
-  background-image: url(../imgs/manigueta.png);
-  width: 100%;
-  height: 350px;
+/*hero pag de serigrafía*/
+.hero_imágen_bastidor {
+  background-image: url(../../imgs/manosenbastidor2.jpg);
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #9967ce;
 }
 
 .hero_text {
@@ -95,28 +103,26 @@ footer .logo {
 }
 .grid_index .integrante1 {
   grid-area: i1;
+  align-items: center;
 }
 .grid_index .integrante2 {
   grid-area: i2;
+  align-items: center;
 }
 .grid_index > div {
   text-align: start;
   padding: 20px 20px;
 }
+.grid_index .subtítulo_nombre {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 8px;
+}
 .grid_index .fotoequipo {
   border-radius: 50%;
 }
 
-/*hero pag de serigrafía*/
-.hero_imágen_bastidor {
-  background-image: url(../imgs/manosenbastidor2.jpg);
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*grid*/
+/*grid grabado*/
 .grid_container_grabado {
   display: grid;
   grid-template-areas: "intro intro intro intro" "info1 info2 info3 info4";
@@ -140,53 +146,66 @@ footer .logo {
   text-align: start;
   padding: 10px 10px;
 }
-.grid_container_grabado .subtitulo_grabado_intro {
+
+/*grid estampado*/
+.grid_container_estampado {
+  display: grid;
+  grid-template-areas: "e1 e2 e3" "e4 e5 e6" "e7 e8 e9";
+}
+.grid_container_estampado .estampado1 {
+  grid-area: e1;
+}
+.grid_container_estampado .estampado2 {
+  grid-area: e2;
+}
+.grid_container_estampado .estampado3 {
+  grid-area: e3;
+}
+.grid_container_estampado .estampado4 {
+  grid-area: e4;
+}
+.grid_container_estampado .estampado5 {
+  grid-area: e5;
+}
+.grid_container_estampado .estampado6 {
+  grid-area: e6;
+}
+.grid_container_estampado .estampado7 {
+  grid-area: e7;
+}
+.grid_container_estampado .estampado8 {
+  grid-area: e8;
+}
+.grid_container_estampado .estampado9 {
+  grid-area: e9;
+}
+.grid_container_estampado > div {
   text-align: start;
-  font-weight: bold;
-  padding-bottom: 8px;
-}
-.grid_container_grabado .subtitulos_grabado {
-  text-align: center;
-  font-weight: bold;
-  padding-bottom: 8px;
+  padding: 10px 10px;
 }
 
-/*hero pag de taller*/
-.hero_imágen_mesadetrabajo {
-  background-image: url(../imgs/mesadetrabajo6.jpg);
-  height: 300px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.resumen {
+  padding: 20px 20px;
 }
 
-.hero_text_mesadetrabajo {
-  font-family: "Bebas Neue", sans-serif;
-  text-align: end;
-  font-size: 100px;
-  color: #000000;
-  padding: 125px 325px;
+.grid_container_infotaller {
+  display: grid;
+  grid-template-areas: "it1 it2";
 }
-
-/*card taller*/
-.card_hero {
-  display: flex;
+.grid_container_infotaller .infotaller1 {
+  grid-area: it1;
 }
-.card_hero img {
-  width: 60%;
+.grid_container_infotaller .infotaller2 {
+  grid-area: it2;
 }
-.card_hero_content {
-  padding: 10px;
-  background-color: #9c7856;
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.grid_container_infotaller > div {
+  text-align: start;
+  padding: 10px 10px;
 }
 
 .grid_container_herramientas {
   display: grid;
-  grid-template-areas: "h1 h2 h3 h4" "h5 h6 h7 h8";
+  grid-template-areas: "h1 h2 h3 h4" "h5 h6 h7 h8" "h9 h10 h11 h12" "h13 h13 h14 h14";
 }
 .grid_container_herramientas .herramienta1 {
   grid-area: h1;
@@ -212,66 +231,66 @@ footer .logo {
 .grid_container_herramientas .herramienta8 {
   grid-area: h8;
 }
+.grid_container_herramientas .herramienta9 {
+  grid-area: h9;
+}
+.grid_container_herramientas .herramienta10 {
+  grid-area: h10;
+}
+.grid_container_herramientas .herramienta11 {
+  grid-area: h11;
+}
+.grid_container_herramientas .herramienta12 {
+  grid-area: h12;
+}
+.grid_container_herramientas .herramienta13 {
+  grid-area: h13;
+}
+.grid_container_herramientas .herramienta14 {
+  grid-area: h14;
+}
 .grid_container_herramientas > div {
   text-align: start;
   padding: 10px 10px;
 }
-.grid_container_herramientas .subtítulos {
-  text-align: start;
-  font-weight: bold;
-  padding-bottom: 8px;
+
+.carousel_piezas_digitales {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.carousel_piezas_digitales .carousel-inner {
+  width: 600px;
 }
 
 .carousel_piezas_serigraficas {
   display: flex;
   justify-content: space-between;
 }
-
-/*carousel galería stickers*/
-#carousel_stickers .carousel-item {
+.carousel_piezas_serigraficas #carousel_stickers .carousel-item {
   width: 400px;
   height: 500px;
 }
-#carousel_stickers .carousel-item img {
+.carousel_piezas_serigraficas #carousel_stickers .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-#carousel_card_corazones .carousel-item {
+.carousel_piezas_serigraficas #carousel_card_corazones .carousel-item {
   width: 400px;
   height: 500px;
 }
-#carousel_card_corazones .carousel-item img {
+.carousel_piezas_serigraficas #carousel_card_corazones .carousel-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-#carousel_card_corazones .card-title {
+.carousel_piezas_serigraficas #carousel_card_corazones .card-title {
   text-align: center;
-  color: #000000;
+  color: #9967ce;
 }
-
-.carousel-inner {
+.carousel_piezas_serigraficas .carousel-inner {
   width: 600px;
-}
-
-/*carousel piezas digitales x galería*/
-.container-fluid {
-  background-color: rgb(115, 115, 115);
-}
-.container-fluid .carousel-item {
-  width: 100%;
-  height: 400px;
-}
-.container-fluid .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.container-fluid .card_title {
-  text-align: center;
-  color: #000000;
 }
 
 .grid_container_form_map {
@@ -339,23 +358,23 @@ footer .logo {
 /*font-family: 'Bebas Neue', sans-serif;*/
 /*texto*/
 h1 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 50px;
   color: #fff;
   background-color: #9967ce;
-  padding: 20px 20px; 
+  padding: 20px 20px;
 }
 
 h2 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 30px;
   padding: 20px 20px;
-  color: #fff; 
+  color: #fff;
   background-color: #000000;
 }
 
 h3 {
-  padding: 20px 20px; 
+  padding: 20px 20px;
   color: white;
   background-color: #9967ce;
 }
@@ -363,7 +382,7 @@ h3 {
 h4 {
   text-align: start;
   font-weight: bold;
-  padding-top: 10px; 
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 

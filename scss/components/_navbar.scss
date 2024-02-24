@@ -5,6 +5,7 @@ nav {
     justify-content: space-between;
     background-color: black; 
     position: sticky;
+    align-items: center;
  } 
 
 
@@ -20,3 +21,11 @@ nav {
     font-weight: bold;
 }
 
+.nav-brand {
+    width: 120px;
+    height: 100%;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
