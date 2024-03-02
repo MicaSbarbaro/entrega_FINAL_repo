@@ -24,6 +24,19 @@
     .info_4_grabado {
         grid-area: info4;
     }
+    
+    .card {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        padding: 20px 20px;
+        .card-img {
+            width: 250px;
+            height: fit-content;
+            object-fit: cover;
+            align-self: center;
+        }
+    }
 
     & > div {
         text-align: start;
@@ -67,14 +80,57 @@
         grid-area: e9;
     }
 
+    .card {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        padding: 40px 20px 20px 20px;
+        .card-img {
+            width: 350px;
+            height: fit-content;
+            object-fit: cover;
+            align-self: center;
+        }
+    }
+
     & > div {
         text-align: start;
         padding: 20px 20px;
     }
 }
 
-.limpieza1 {
-    padding: 0px 20px 20px 20px;
+.limpieza_container {
+    display: grid;
+    grid-template-areas: 
+    'l1 l2 l3';
+
+    .limpieza1 {
+        grid-area: l1;
+    }
+    .limpieza2 {
+        grid-area: l2;
+    }
+    .limpieza3 {
+        grid-area: l3;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        padding: 20px 20px;
+        .card-img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            align-self: center;
+        }
+    }
+
+    & > div {
+        text-align: start;
+        padding: 20px 20px;
+    }
 }
 
 .resumen {
