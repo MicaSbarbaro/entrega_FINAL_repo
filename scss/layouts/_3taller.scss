@@ -32,10 +32,11 @@
 .grid_container_herramientas {
     display: grid;  
     grid-template-areas: 
-    'h1 h2 h3 h4'
-    'h5 h6 h7 h8'
-    'h9 h10 h11 h12'
-    'h13 h13 h14 h14';
+    'h1 h2 h3'
+    'h4 h5 h6'
+    'h7 h8 h9'
+    'h10 h11 h12'
+    'h13 h13 h14';
 
     .herramienta1 {
         grid-area: h1;
@@ -91,6 +92,19 @@
 
     .herramienta14 {
         grid-area: h14;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        padding: 20px 20px;
+        .card-img {
+            width: 250px;
+            height: fit-content;
+            object-fit: cover;
+            align-self: center;
+        }
     }
 
     & > div {
