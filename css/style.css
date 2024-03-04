@@ -149,7 +149,7 @@ footer .logo {
   width: 100%;
   height: 100%;
   align-content: center;
-  padding: 20px 20px;
+  padding: 30px 20px 20px 20px;
 }
 .grid_container_grabado .card .card-img {
   width: 250px;
@@ -228,7 +228,7 @@ footer .logo {
   width: 100%;
   height: 100%;
   align-content: center;
-  padding: 20px 20px;
+  padding: 30px 20px 20px 20px;
 }
 .limpieza_container .card .card-img {
   width: 350px;
@@ -257,7 +257,9 @@ footer .logo {
 }
 .card-hero-container .card-hero .card-header {
   position: relative;
-  width: 60%;
+  width: 75%;
+  background-color: rgb(202, 202, 202);
+  padding: 20px 20px;
 }
 .card-hero-container .card-hero .card-header img {
   width: 100%;
@@ -266,7 +268,6 @@ footer .logo {
 }
 .card-hero-container .card-hero .card-hero-content {
   padding: 30px;
-  background-color: rgb(215, 215, 215);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -274,7 +275,7 @@ footer .logo {
 
 .grid_container_herramientas {
   display: grid;
-  grid-template-areas: "h1 h2 h3 h4" "h5 h6 h7 h8" "h9 h10 h11 h12" "h13 h13 h14 h14";
+  grid-template-areas: "h1 h2 h3" "h4 h5 h6" "h7 h8 h9" "h10 h11 h12" "h13 h14 h14";
 }
 .grid_container_herramientas .herramienta1 {
   grid-area: h1;
@@ -322,7 +323,7 @@ footer .logo {
   width: 100%;
   height: 100%;
   align-content: center;
-  padding: 20px 20px;
+  padding: 40px 20px 20px 20px;
 }
 .grid_container_herramientas .card .card-img {
   width: 250px;
@@ -332,7 +333,7 @@ footer .logo {
 }
 .grid_container_herramientas > div {
   text-align: start;
-  padding: 20px 20px;
+  padding: 15px 15px;
 }
 
 .carousel_piezas_digitales {
@@ -435,6 +436,12 @@ footer .logo {
   padding: 20px 20px;
 }
 
+/* Desktop entre 1024px a 1200px
+@media only screen and (max-width: 1200px) {...}*/
+/* Tablet entre 768px a 1024px
+@media only screen and (max-width: 768px) {...}*/
+/* Mobile entre 320px a 768px (contenido en una sola columna) 
+@media only screen and (max-width: 320px) {...}*/
 /*font-family: 'Rambla', sans-serif;*/
 /*font-family: 'Bebas Neue', sans-serif;*/
 /*texto*/
