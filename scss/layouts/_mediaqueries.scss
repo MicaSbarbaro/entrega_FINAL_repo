@@ -158,6 +158,15 @@
     }
 }
 
+/*pág GALERÍA*/
+@media (max-width: 1200px) {
+    .carousel_piezas_serigraficas {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
 
 /*pág CONTACTO*/
 @media (max-width: 900px) {
