@@ -349,15 +349,6 @@ footer .logo {
   justify-content: space-between;
   padding: 10px 10px;
 }
-.carousel_piezas_serigraficas2 #carousel_stickers .carousel-item {
-  width: 400px;
-  height: 500px;
-}
-.carousel_piezas_serigraficas2 #carousel_stickers .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .carousel_piezas_serigraficas2 .carousel-inner {
   width: 600px;
 }
@@ -423,10 +414,13 @@ footer .logo {
   padding: 20px 20px;
 }
 
-/* Desktop entre 1024px a 1200px
-@media only screen and (max-width: 1200px) {...}*/
-/* Tablet entre 768px a 1024px
-@media only screen and (max-width: 768px) {...}*/
+/* Desktop entre 1024px a 1200px*/
+/* Tablet entre 768px a 1024px*/
+@media (max-width: 768px) {
+  .card-hero {
+    flex-direction: column;
+  }
+}
 /* Mobile entre 320px a 768px (contenido en una sola columna) 
 @media only screen and (max-width: 320px) {...}*/
 /*font-family: 'Rambla', sans-serif;*/
