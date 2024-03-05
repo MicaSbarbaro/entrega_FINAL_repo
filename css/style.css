@@ -82,8 +82,7 @@ footer .logo {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.hero_text {
+.hero_imágen_bastidor .hero_text {
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
   font-size: 100px;

@@ -5,15 +5,15 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    .hero_text {
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        font-size: 100px;
+        color: #fff;
+        padding: 40px 20px;
+    }
 }
-  
-.hero_text {
-    font-family: 'Bebas Neue', sans-serif;
-    text-align: center;
-    font-size: 100px;
-    color: #fff;
-    padding: 40px 20px;
-}
+
 
 .grid_index { 
 	display: grid;
