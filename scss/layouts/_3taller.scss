@@ -1,8 +1,8 @@
-.card-hero-container {
+.card-hero-container-taller {
     display: flex;
     flex-direction: column;
     
-    .card-hero {
+    .card-hero-taller {
         display: flex;
         flex-direction: row;
         position: center;
@@ -19,7 +19,7 @@
                 object-fit: cover;
             }
         }
-        .card-hero-content {
+        .card-hero-content-taller {
             padding: 30px;
             width: 100%;
             display: flex;

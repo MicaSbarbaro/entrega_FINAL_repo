@@ -1,15 +1,126 @@
-/* Desktop entre 1024px a 1200px*/
+/* Desktop entre 1024px a 1200px/ Tablet entre 768px a 1024px/ Mobile entre 320px a 768px (contenido en una sola columna) */
 
+/*pág NAVBAR
+@media (max-width: 768px) {...} */
 
-/* Tablet entre 768px a 1024px*/
-@media (max-width: 768px) {
-    .card-hero {
-        flex-direction: column;
+/*pág ÍNDEX*/
+@media (max-width: 900px) {
+    .grid_index { 
+        display: grid;
+        grid-template-areas:
+        'i0 i0'
+        'ti ti'
+        'i1 i2';
+    } 
+} 
+
+@media (max-width: 500px) {
+    .grid_index { 
+        display: grid;
+        grid-template-areas:
+        'i0'
+        'ti'
+        'i1' 
+        'i2';
+    } 
+} 
+
+/*pág SERIGRAFÍA*/
+@media (max-width: 1300px) {
+    .grid_container_grabado {
+        display: grid;
+        grid-template-areas: 
+        'intro intro' 
+        'info1 info2'  
+        'info3 info4';
+
+        .card {
+            width: 100%;
+            height: 100%;
+            .card-img-grabado {
+                width: 100%; 
+            }
+        }
     }
 }
 
+@media (max-width: 550px) {
+    .grid_container_grabado {
+        display: grid;
+        grid-template-areas: 
+        'intro' 
+        'info1'  
+        'info2'  
+        'info3'  
+        'info4';
+
+        .card {
+            width: 90%;
+            height: fit-content;
+            .card-img-grabado {
+                width: 100%; 
+            }
+        }
+    }
+}
+
+/*pág TALLER*/
+
+@media (max-width: 950px) {
+    .card-hero-container-taller {
+        display: flex;
+        flex-direction: column;
+        
+        .card-hero-taller {
+            flex-direction: column;  
+            .card-header {
+                position: relative;
+                width: 100%;  
+            }
+        }
+    }    
+}
+
+@media (max-width: 800px) {
+    .grid_container_herramientas {
+        display: grid;  
+        grid-template-areas: 
+        'h1 h2'
+        'h3 h4'
+        'h5 h6'
+        'h7 h8'
+        'h9 h10' 
+        'h11 h12'
+        'h13 h14';
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .grid_container_herramientas {
+        display: grid;  
+        grid-template-areas: 
+        'h1' 
+        'h2'
+        'h3' 
+        'h4'
+        'h5' 
+        'h6'
+        'h7' 
+        'h8'
+        'h9' 
+        'h10' 
+        'h11' 
+        'h12'
+        'h13' 
+        'h14';
+    }
+}
+
+/*pág GALERÍA*/
+
+
+/*pág CONTACTO*/
 
 
 
-/* Mobile entre 320px a 768px (contenido en una sola columna) 
-@media only screen and (max-width: 320px) {...}*/
