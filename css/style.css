@@ -339,6 +339,8 @@ footer .logo {
   display: flex;
   justify-content: space-between;
   padding: 10px 10px;
+  flex-direction: column;
+  gap: 10px;
 }
 .carousel_piezas_serigraficas .carousel-inner {
   width: 600px;
@@ -348,6 +350,8 @@ footer .logo {
   display: flex;
   justify-content: space-between;
   padding: 10px 10px;
+  flex-direction: column;
+  gap: 10px;
 }
 .carousel_piezas_serigraficas2 .carousel-inner {
   width: 600px;
@@ -442,19 +446,39 @@ footer .logo {
   }
   .grid_container_grabado .card .card-img-grabado {
     width: 100%;
+    height: 100%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 950px) {
   .grid_container_grabado {
     display: grid;
     grid-template-areas: "intro" "info1" "info2" "info3" "info4";
   }
   .grid_container_grabado .card {
-    width: 90%;
-    height: fit-content;
+    width: 100%;
+    height: 100%;
   }
   .grid_container_grabado .card .card-img-grabado {
     width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 1300px) {
+  .grid_container_estampado {
+    display: grid;
+    grid-template-areas: "e1 e2" "e3 e4" "e5 e6" "e7 e8" "e9 e9";
+  }
+}
+@media (max-width: 860px) {
+  .grid_container_estampado {
+    display: grid;
+    grid-template-areas: "e1" "e2" "e3" "e4" "e5" "e6" "e7" "e8" "e9" "e9";
+  }
+}
+@media (max-width: 1300px) {
+  .limpieza_container {
+    display: grid;
+    grid-template-areas: "l1" "l2" "l3";
   }
 }
 /*pág TALLER*/
@@ -483,8 +507,13 @@ footer .logo {
     grid-template-areas: "h1" "h2" "h3" "h4" "h5" "h6" "h7" "h8" "h9" "h10" "h11" "h12" "h13" "h14";
   }
 }
-/*pág GALERÍA*/
 /*pág CONTACTO*/
+@media (max-width: 900px) {
+  .grid_container_form_map {
+    display: grid;
+    grid-template-areas: "form form" "map map";
+  }
+}
 /*font-family: 'Rambla', sans-serif;*/
 /*font-family: 'Bebas Neue', sans-serif;*/
 /*texto*/
