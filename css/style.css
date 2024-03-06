@@ -345,11 +345,17 @@ footer .logo {
 }
 
 .carousel_piezas_serigraficas2 {
-  display: flex;
   justify-content: space-between;
   padding: 10px 10px;
-  flex-direction: column;
-  gap: 10px;
+  display: grid;
+  grid-template-areas: "cL iL";
+}
+.carousel_piezas_serigraficas2 #carousel_lobas {
+  grid-area: cL;
+}
+.carousel_piezas_serigraficas2 .info_lobas {
+  grid-area: iL;
+  padding: 20px 20px;
 }
 .carousel_piezas_serigraficas2 .carousel-inner {
   width: 600px;
@@ -417,8 +423,13 @@ footer .logo {
 }
 
 /* Desktop entre 1024px a 1200px/ Tablet entre 768px a 1024px/ Mobile entre 320px a 768px (contenido en una sola columna) */
-/*pág NAVBAR
-@media (max-width: 768px) {...} */
+/*pág NAVBAR*/
+@media (max-width: 768px) {
+  nav, .nav_list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*pág ÍNDEX*/
 @media (max-width: 900px) {
   .grid_index {
@@ -512,6 +523,13 @@ footer .logo {
     justify-content: space-between;
     flex-direction: column;
     gap: 20px;
+  }
+}
+@media (max-width: 950px) {
+  .carousel_piezas_serigraficas2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 /*pág CONTACTO*/

@@ -9,11 +9,20 @@
 }
 
 .carousel_piezas_serigraficas2 {
-    display: flex;
     justify-content: space-between;
     padding: 10px 10px;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-areas: 
+    'cL iL';
+
+    #carousel_lobas{
+        grid-area: cL;
+    }
+
+    .info_lobas {
+        grid-area: iL;
+        padding: 20px 20px;
+    }
     
     .carousel-inner {
         width: 600px;
