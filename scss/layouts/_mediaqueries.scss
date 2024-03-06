@@ -1,7 +1,12 @@
 /* Desktop entre 1024px a 1200px/ Tablet entre 768px a 1024px/ Mobile entre 320px a 768px (contenido en una sola columna) */
 
-/*pág NAVBAR
-@media (max-width: 768px) {...} */
+/*pág NAVBAR*/
+@media (max-width: 768px) {
+    nav, .nav-list { 
+        display: flex;
+        flex-direction: column;
+    } 
+} 
 
 /*pág ÍNDEX*/
 @media (max-width: 900px) {
