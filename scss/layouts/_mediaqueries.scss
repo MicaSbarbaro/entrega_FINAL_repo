@@ -49,24 +49,6 @@
             }
         }
     }
-
-    .grid_container_estampado {
-        display: grid;  
-        grid-template-areas: 
-        'e1 e2' 
-        'e3 e4'
-        'e5 e6'
-        'e7 e8'
-        'e9 e9';
-    }
-
-    .limpieza_container {
-        display: grid;
-        grid-template-areas: 
-        'l1' 
-        'l2' 
-        'l3';    
-    }
 }
 
 @media (max-width: 950px) {
@@ -90,6 +72,18 @@
     }
 }
 
+@media (max-width: 1300px) {
+    .grid_container_estampado {
+        display: grid;  
+        grid-template-areas: 
+        'e1 e2' 
+        'e3 e4'
+        'e5 e6'
+        'e7 e8'
+        'e9 e9';
+    }
+}
+
 @media (max-width: 860px) {
     .grid_container_estampado {
         display: grid;  
@@ -107,7 +101,15 @@
     }
 }
 
-
+@media (max-width: 1300px) {
+    .limpieza_container {
+        display: grid;
+        grid-template-areas: 
+        'l1' 
+        'l2' 
+        'l3';    
+    }
+}
 
 /*pág TALLER*/
 
