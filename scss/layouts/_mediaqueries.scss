@@ -32,25 +32,6 @@
 } 
 
 /*pág SERIGRAFÍA*/
-@media (max-width: 1300px) {
-    .grid_container_grabado {
-        display: grid;
-        grid-template-areas: 
-        'intro intro' 
-        'info1 info2'  
-        'info3 info4';
-
-        .card {
-            width: 100%;
-            height: 100%;
-            .card-img-grabado {
-                width: 100%; 
-                height: 100%;
-            }
-        }
-    }
-}
-
 @media (max-width: 950px) {
     .grid_container_grabado {
         display: grid;
